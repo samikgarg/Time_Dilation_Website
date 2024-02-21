@@ -48,7 +48,7 @@ function calcVelocity(time, relativeTime) {
 
 button.addEventListener("click", function () {
   calcVelocity(
-    timeField.value * 365 * 24 * 60 * 60,
-    relativeField.value * 365 * 24 * 60 * 60
+    parseInt(timeField.value) * 365 * 24 * 60 * 60,
+    parseInt(relativeField.value) * 365 * 24 * 60 * 60
   );
 });
